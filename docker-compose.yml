@@ -1,0 +1,13 @@
+version: "2.1"
+
+services:
+
+  mycat:
+    image: mycat:latest
+    container_name: mycat
+    ports:
+      - '8066:8066'
+      - '9066:9066'
+    volumes:
+      - '/home/iot/mycat/conf:/opt/mycat/conf'
+      - '/home/iot/mycat/logs:/opt/mycat/logs'
