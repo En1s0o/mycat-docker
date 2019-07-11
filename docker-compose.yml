@@ -5,6 +5,7 @@ services:
   mycat:
     image: mycat:latest
     container_name: mycat
+    restart: always
     ports:
       - '8066:8066'
       - '9066:9066'
